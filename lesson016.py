@@ -20,6 +20,15 @@ class Dog(Animal):
         self.sound = sound
         self.favorite_food = favorite_food
 
+class Engine:
+    def start_engine(self):
+        return "Starting Engine"
+
+class Car:
+    def __init__(self):
+        self.engine = Engine()
+
+
 
 if __name__ == '__main__':
     animal = Animal()
@@ -27,9 +36,13 @@ if __name__ == '__main__':
 
     print('Animal Speaking')
     print(animal.speak())
-    print('-'*80)
+    print('-'*30)
 
     print('Dog Behavior')
     dog.eat()
     print(dog.speak())
     print('-'*80)
+
+    car = Car()
+    print(car.engine.start_engine())
+
