@@ -7,12 +7,12 @@ class C(A):
     #     print("Method from class C")
     pass
 
-class B(A):
+class E(A):
     # def show(self):
     #     print("Method from class B")
     pass
 
-class D(B, C): pass
+class D(E, C): pass
 
 
 if __name__ == '__main__':
