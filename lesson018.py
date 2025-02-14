@@ -3,8 +3,9 @@ class A:
         print("Method from class A")
 
 class C(A):
-    def show(self):
-        print("Method from class C")
+    # def show(self):
+    #     print("Method from class C")
+    pass
 
 class B(A):
     # def show(self):
