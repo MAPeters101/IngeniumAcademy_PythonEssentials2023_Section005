@@ -8,12 +8,15 @@ class Circle:
     def helper1(parameter):
         pass
 
-    def area(self):
-        return 3.14 * self.radius * self.radius
-
     @staticmethod
     def calculate_area_static(radius):
+        #self.area()
         return 3.14 * radius * radius
+
+    def area(self):
+        return self.calculate_area_static(radius=self.radius)
+        # return 3.14 * self.radius * self.radius
+
 
 if __name__ == '__main__':
     circle = Circle(radius=10)
