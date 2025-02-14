@@ -7,8 +7,9 @@ class C(A):
         print("Method from class C")
 
 class B(A):
-    def show(self):
-        print("Method from class B")
+    # def show(self):
+    #     print("Method from class B")
+    pass
 
 class D(B, C): pass
 
